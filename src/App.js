@@ -5,11 +5,11 @@ function FirstReactComponent() {
   return <p>I am new here!</p>;
 }
 
-function ChildrenWithTitle(props) {
+function ChildrenWithTitle({ title, children }) {
   return (
     <div>
-      <h2>{props.title}</h2>
-      {props.children}
+      <h2>{title}</h2>
+      {children}
     </div>
   );
 }
