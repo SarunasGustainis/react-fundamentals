@@ -3,6 +3,7 @@ import "./App.css";
 import { FirstReactComponent } from "./FirstReactComponent.jsx";
 import ChildrenWithTitle from "./ChildrenWithTitle.jsx";
 import ConditionalRenderingComponent from "./ConditionalRenderingComponent.jsx";
+import RenderingLists from "./RenderingLists.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ChildrenWithTitle title="I am title">I am children</ChildrenWithTitle>
       <ConditionalRenderingComponent isBlue={true} />
       <ConditionalRenderingComponent isBlue={false} />
+      <RenderingLists />
     </div>
   );
 }
