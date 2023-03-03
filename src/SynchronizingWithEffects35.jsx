@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-function SynchronizingWithEffects35() {
-  const [count, setCount] = useState(0);
+const SynchronizingWithEffects35 = () => {
+    const [count, setCount] = useState(0);
 
   const increment = () => {
     setCount((prevCount) => prevCount + 1);
