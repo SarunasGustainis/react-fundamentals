@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import InteractionEvents33 from './InteractionEvents33';
+import StatefulComponent34 from './StatefulComponent34';
 
 function App() {
   return (
-    <InteractionEvents33 />
+    <StatefulComponent34 />
   );
 }
 
