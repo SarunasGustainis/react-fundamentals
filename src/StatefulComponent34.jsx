@@ -3,21 +3,18 @@ import React, { useState } from 'react';
 function StatefulComponent34() {
   const [count, setCount] = useState(0);
 
-  function incrementCount() {
-    setCount(count + 1);
-  }
+  const incrementCount = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
 
-  function decrementCount() {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  }
+  const decrementCount = () => {
+    setCount((prevCount) => prevCount > 0 ? prevCount - 1 : prevCount);
+  };
 
   return (
     <div>
       <button onClick={incrementCount}>Increment</button>
       <button onClick={decrementCount}>Decrement</button>
-
       <p>
         <span>Result: </span>
         {count}
